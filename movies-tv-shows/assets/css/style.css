@@ -1,0 +1,214 @@
+        @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Sue+Ellen+Francisco&display=swap');
+         :root {
+            --prim-color: #4f4c4c;
+            --panel-color: #2e292a;
+        }
+        
+        * {
+            margin-bottom: 0;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            box-sizing: border-box;
+        }
+        
+        .main-container {
+            height: auto;
+            background-color: var(--prim-color);
+        }
+        
+        .site-logo {
+            padding-left: 3rem;
+        }
+        
+        .search-btn button {
+            width: 100%;
+        }
+        
+        .navbar-dropdown {
+            min-width: 30% !important;
+        }
+        
+        .p-title {
+            color: aliceblue;
+            padding-top: 2rem;
+            font-family: 'Calistoga', cursive;
+        }
+        /* show poster */
+        
+        .show-list {
+            margin-top: 2rem;
+        }
+        
+        .show-posters {
+            margin: .2rem;
+            border: .3rem solid;
+            border-color: #302d2d;
+            max-width: auto;
+            max-height: auto;
+            box-shadow: rgba(10, 12, 12, 0.871) 0px 1px 2px 0px, rgb(228, 233, 237) 0px 2px 6px 2px;
+        }
+        
+        .show-posters p {
+            font-size: 15px;
+        }
+        
+        .modal-poster {
+            background-color: aliceblue;
+        }
+        
+        .poster:hover {
+            cursor: pointer;
+        }
+        
+        .search-wrapper {
+            border-radius: .5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            padding-right: 2rem;
+            background-color: var(--panel-color);
+        }
+        /* arrow icons */
+        
+        .more-icon {
+            border-radius: 0 0 .5rem .5rem;
+            background-color: var(--panel-color)!important;
+        }
+        
+        .icon-left:hover {
+            color: rgb(25, 213, 8);
+            transform: translateX(-10px);
+        }
+        
+        .icon-right:hover {
+            color: rgb(25, 213, 8);
+            transform: translateX(10px);
+        }
+        
+        .more-icon span {
+            position: relative;
+            margin-left: 5rem;
+            cursor: pointer;
+        }
+        
+        .more-icon span {
+            position: relative;
+            margin-left: 5rem;
+            align-content: center;
+            cursor: pointer;
+        }
+        
+        .text p {
+            font-size: 15px;
+        }
+        /* modal */
+        
+        .box-info {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .attributes {
+            padding-top: 1rem;
+        }
+        
+        .modal-items {
+            border-radius: 1rem;
+            font-size: 15px;
+            padding: 2rem 2rem 2rem 2rem;
+            background-color: rgb(255, 255, 255);
+            color: var(--panel-color);
+        }
+        
+        .modal-items .poster {
+            border: .2rem outline rgb(131, 112, 112);
+            border-radius: .2rem;
+            outline-style: double;
+        }
+        
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 38px;
+            /* Preferred icon size */
+            display: inline-block;
+            line-height: 0;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        /* footer */
+        
+        .footer {
+            background-color: var(--prim-color);
+            padding: 1rem !important;
+            align-content: center;
+            color: white;
+        }
+        
+        .tile.is-child {
+            margin-top: 2rem !important
+        }
+        
+        .notification a:not(.button):not(.dropdown-item) {
+            text-decoration: none;
+            margin: 2rem;
+        }
+        
+        .notification a:not(.button):not(.dropdown-item):hover {
+            color: rgb(201, 131, 40);
+        }
+        /*         
+        .field .select {
+            margin-top: 2rem;
+        } */
+        
+        .dropdown {
+            padding-top: 1rem;
+        }
+        
+        .fa-fw {
+            padding-left: 1rem;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .nav-movie {
+                display: flex;
+                flex-direction: column;
+            }
+            .nav-bar-item {
+                font-size: 10px;
+                padding: 0;
+                margin: 0;
+                text-align: left;
+            }
+            .navbar-item,
+            .navbar-link {
+                padding: 0;
+            }
+            .placeholder-column {
+                max-width: 0%;
+            }
+            .show-posters {
+                max-width: 30%;
+            }
+            .show-posters p {
+                font-size: 10px;
+            }
+            .tile.is-child {
+                margin: 1rem !important
+            }
+            .p-title {
+                padding: 0;
+            }
+            .footer .footer-content p {
+                display: flex;
+                flex-direction: column;
+            }
+            .notification a:not(.button):not(.dropdown-item) {
+                margin: 0;
+            }
+        }

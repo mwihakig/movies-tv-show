@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- Bulma -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- stylesheet -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <title>Movies & Tv Shows List</title>
+</head>
+
+<body>
+
+    <!-- NAV-BAR -->
+    <nav class="level is-2">
+        <div class="site-logo">
+            <p class="level-item has-text-centered">
+                <img src="./assets/img/site-logo.png" width="120" height="120">
+            </p>
+        </div>
+
+        <div class="column is-3"></div>
+        <div class="column">
+
+            <div class="level-item nav-movie">
+                <div class="column is-half"></div>
+                <div class="navbar-item level-item has-dropdown is-hoverable ">
+                    <a class="link is-info is-size-3">Movies
+                                <span class="material-icons">movie</span></a>
+                    <div class="navbar-dropdown ">
+                        <a class="navbar-item is-size-4 movies-btn" id="1" data-movie="Top250Movies">
+                                    Top 10 Movies
+                                  </a>
+                        <a class="navbar-item is-size-4 movies-btn" id="2" data-movie="MostPopularMovies">
+                                    Most Popular Movies
+                                  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="level-item nav-tv">
+                <div class="navbar-item level-item has-dropdown is-hoverable ">
+                    <a class="link is-info is-size-3">TV Shows
+                    <span class="material-icons">smart_display</span></a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item is-size-4 tv-show-btn" id="3" data-tv="Top250TVs">
+                        Top 10 TVs
+                      </a>
+                        <a class="navbar-item is-size-4 tv-show-btn" id="4" data-tv="MostPopularTVs">
+                        Most Popular TVs
+                      </a>
+                    </div>
+                </div>
+                <div class="column placeholder-column is-three-fifths"></div>
+            </div>
+
+        </div>
+
+        </a>
+
+    </nav>
+    <!-- END OF NAV-BAR -->
+
+    <!-- Hero Section -->
+    <div class="tile main-container is-desktop">
+        <div class="tile is-vertical">
+            <div class="tile ">
+                <!-- search section -->
+                <div class="tile is-parent is-verticalv is-4">
+                    <article class="tile is-child notification ">
+                        <p class="title has-text-centered">Search by Title</p>
+                        <!-- search field -->
+                        <div class="field">
+                            <div class="control">
+                                <!-- search input with search history-->
+                                <input class="input is-rounded is-medium" id="title" type="search" list="history" placeholder="Enter a title">
+                                <datalist id="history">
+                                </datalist>
+                                <div class="search-btn">
+                                    <button class="button mt-3 is-success is-medium is-rounded" id="search-btn">Search
+                                        <i class="fa fa-search fa-fw " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column"></div>
+                        <!-- search type section -->
+                        <div class="select">
+                            <select id="search-type">
+                            <option class="is-focused">Search by Type:</option>
+                            <option value="SearchMovie">Movies</option>
+                            <option value="SearchSeries">TV Series</option>
+                        </div>
+                    </select>
+                            <!-- end of search type -->
+                    </article>
+                    </div>
+                    <!-- end of search section -->
+
+                    <!-- display content section -->
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification has-background-grey-dark">
+                            <p class="title"></p>
+                            <p class="subtitle"></p>
+                            <div class="show-list-header is-size-2">
+                                <div class="p-title has-text-centered"></div>
+                            </div>
+                            <figure class="image place-holder-image is-4by3">
+
+                            </figure>
+                        </article>
+                    </div>
+                    <!-- end of display content section -->
+                </div>
+                <!-- footer -->
+                <div class="tile hero-footer is-parent">
+                    <article class="tile is-child notification">
+                        <!-- Hero footer: will stick at the bottom -->
+                        <footer class="footer">
+                            <div class="content footer-content has-text-centered">
+                                <p>
+                                    <p>copyright© 2022: <strong>Stream2Go Corp.&nbsp</strong>
+                                        <a href="https://github.com/SophoanMeas " target="_blank ">Sophoan Meas </a>
+                                        <a href="https://github.com/elsartz " target="_blank ">Vardis Sartzetakis </a>
+                                        <a href="https://github.com/mwihakig " target="_blank ">Mwihaki Githii </a>
+                                        <a href="https://github.com/SierraDavis2000 " target="_blank ">Sierra Davis</a>
+                            </div>
+                        </footer>
+                </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal " id="modal-js ">
+        <div class="modal-background"></div>
+
+        <div class="modal-content ">
+            <div class="box-info ">
+                <!-- content -->
+
+            </div>
+        </div>
+
+
+
+        <script defer src="./assets/env/config.js "></script>
+        <script defer src="./assets/js/javascript.js "></script>
+</body>
+
+</html>
